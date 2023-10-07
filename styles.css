@@ -1,0 +1,213 @@
+/* Certification Project IV - Product Landing Page */
+/* 04.10.23 */
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: var(--scroll-padding, 50px); */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Source Sans, sans-serif;
+}
+
+body {
+    background-color: #000;
+    padding-top: 100px;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+hr {
+    color: white;
+    width: 100vw;
+}
+
+#header {
+    width: 100%;
+    margin: 0px 2px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #000;
+    border-bottom: 1px solid white;
+}
+
+#header-img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.header-img-and-text {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+
+#header-text {
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+#nav-bar {
+    display: flex;
+    /* margin-top: 0; */
+    /* position: fixed; */
+}
+
+.nav-link {
+    color: #000;
+    background-color: #0af;
+    width: 120px;
+    margin: 5px 5px;
+    padding: 5px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 30px;
+}
+
+#intro {
+    text-align: center;
+    color: white;
+}
+
+#intro-heading {
+    color: orangered;
+}
+
+#video {
+    width: 600px;
+    /* width: 100%; */
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.info-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+    color: white;
+}
+
+.info-section div {
+    text-align: center;
+    color: orangered;
+    width: 200px;
+}
+
+.lists {
+    color: white;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lists li {
+    margin: 2px 0;
+}
+
+#form {
+    display: grid;
+    justify-items: center;
+}
+
+#form-text {
+    color: orangered;
+    /* font-size: 1.2rem; */
+    margin: 20px 0;
+}
+
+/* Submit Button (Input Element) */
+#submit {
+    padding: 2px 10px;
+    margin: 20px auto;
+    background-color: #fff;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+#submit:hover {
+    cursor: pointer;
+}
+
+#submit:active {
+    background-color: #0af;
+}
+
+
+/* FOR RESPONSIVENESS */
+
+@media(max-width: 630px) {
+    #header {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header-text {
+        margin: 5px;
+    }
+
+    #nav-bar {
+        font-size: 70%;
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    #video {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 400px) {
+    #nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-text {
+        margin: 5px;
+        font-size: 1.4rem;
+    }
+
+    #nav-bar a {
+        padding: 0px;
+        margin: 1px;
+    }
+}
+
+@media(max-width: 250px) {
+    .header-img-and-text {
+        flex-direction: column;
+    }
+
+    #header-text {
+        font-size: 1.4rem;
+        margin: 2px;
+    }
+
+    #header-img {
+        height: 0;
+    }
+
+    #nav-bar a {
+        height: 18px;
+        margin: 1px 1px;
+        padding: 0px;
+        font-size: 5px;
+    }
+
+    #email {
+        width: 75vw;
+    }
+}

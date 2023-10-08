@@ -1,3 +1,3 @@
-# pro-xpace.github.io
+# Pro-Xpace
 
-## Website link: <a href="https://rk-41.github.io/pro-xpace.github.io/" target="_blank">Pro-Xpace</a>
+## <a href="https://rk-41.github.io/pro-xpace.github.io/" target="_blank">Website link</a>
